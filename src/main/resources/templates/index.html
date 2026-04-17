@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════
+         NAVEGACIÓN FIJA
+    ═══════════════════════════════════════ -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a class="nav__logo" href="#hero">Y</a>
+            <ul class="nav__links">
+                <li><a href="#quien">Quién es</a></li>
+                <li><a href="#historia">Su historia</a></li>
+                <li><a href="#momentos">Momentos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#carta">Carta</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════
+         SECCIÓN 1 · HERO / PORTADA
+    ═══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="/images/hero.jpg" alt="Yuli" class="hero__img" id="heroImg">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">dedicado a</p>
+            <h1 class="hero__title">Yuli</h1>
+            <p class="hero__subtitle">La mejor persona del mundo</p>
+        </div>
+        <a class="hero__scroll" href="#quien" aria-label="Ir a la siguiente sección">
+            <span class="hero__scroll-line"></span>
+            <span class="hero__scroll-text">Descubrir</span>
+        </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECCIÓN 2 · QUIÉN ES YULI
+    ═══════════════════════════════════════ -->
+    <section class="quien" id="quien">
+        <div class="section-inner quien__inner">
+            <div class="quien__text">
+                <span class="section-label">01</span>
+                <h2 class="section-title">Quién es Yuli</h2>
+                <div class="section-divider"></div>
+                <p class="quien__lead">
+                    Hay personas que aparecen sin más y, cuando te quieres dar cuenta, ya son de las más importantes en tu vida.
+                </p>
+
+                <p class="quien__body">
+                    Yuli es eso. No hace falta que llame la atención ni nada raro. Simplemente está, y con eso ya cambia todo. Hace que todo sea más fácil, más tranquilo. Con ella puedes estar horas hablando sin darte cuenta… y cuando no se habla tampoco es incómodo.
+                </p>
+
+                <p class="quien__body">
+                    Es una bola de luz, que aparece para iluminar lo que sea que esté a su alrededor. Y no es una metáfora, es literal. Tiene esa capacidad de hacer que las cosas sean mejores simplemente por estar ahí. Y eso no es algo que se pueda aprender, es algo que se tiene o no se tiene. Y ella lo tiene.
+                </p>
+
+                <p class="quien__body">
+                    Y aunque ella no lo diga o no se lo crea, es de esas personas que marcan. Que no pasan sin más. Y sí, caraculo, va por ti.
+                </p>
+            </div>
+            <div class="quien__media">
+                <div class="quien__img-wrap">
+                    <img src="/images/quien.jpg" alt="Yuli" class="quien__img">
+                </div>
+                <div class="quien__caption">— ella misma, siendo ella misma</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECCIÓN 3 · SU HISTORIA
+    ═══════════════════════════════════════ -->
+    <section class="historia" id="historia">
+        <div class="section-inner">
+            <div class="historia__header">
+                <span class="section-label">02</span>
+                <h2 class="section-title section-title--light">Su historia</h2>
+                <div class="section-divider section-divider--light"></div>
+                <p class="historia__intro">
+                    No hace falta contarla en orden. Las historias que de verdad importan no suelen tenerlo.
+                </p>
+            </div>
+
+            <div class="historia__blocks">
+                <div class="historia__block historia__block--img-left">
+                    <div class="historia__block-img">
+                        <img src="/images/historia1.jpg" alt="Historia de Yuli">
+                    </div>
+                    <div class="historia__block-text">
+                        <h3>El principio de todo</h3>
+                        <p>Antes de ser como es ahora, hubo una Yuli más pequeña que ya tenía todo eso dentro. No lo sabía, obviamente, pero ya estaba ahí. Con el tiempo ha ido encontrando su sitio, su gente, su forma de hacer las cosas. Y lo ha hecho a su manera.</p>
+
+                        <p>Ha ido aprendiendo que las cosas que valen la pena cuestan. Que hay que tener paciencia, aunque a veces no apetezca nada. Y que si quieres algo de verdad, no te queda otra que ir a por ello. Y eso es justo lo que hace.</p></div>
+                </div>
+
+                <div class="historia__block historia__block--img-right">
+                    <div class="historia__block-text">
+                        <h3>Lo que la define</h3>
+                        <p>No es un momento concreto, ni algo puntual, ni una fecha marcada. Lo que define a Yuli es todo lo que va haciendo poco a poco. Cómo trata a la gente, lo que decide cuando nadie le dice qué hacer, cómo se mantiene cuando las cosas se complican.</p>
+
+                        <p>Y eso no sale de un día para otro. Eso es carácter. Y el carácter se demuestra justo cuando nadie está mirando.</p></div>
+                    <div class="historia__block-img">
+                        <img src="/images/historia2.jpg" alt="Yuli y su historia">
+                    </div>
+                </div>
+
+                <div class="historia__block historia__block--img-left">
+                    <div class="historia__block-img">
+                        <img src="/images/historia3.jpg" alt="El camino de Yuli">
+                    </div>
+                    <div class="historia__block-text">
+                        <h3>El camino que sigue</h3>
+                        <p>Su historia no ha terminado, ni de cerca. Está en ese punto en el que todo empieza a encajar un poco más, aunque todavía haya cosas que no estén claras del todo. Y eso también forma parte del proceso.</p>
+
+                        <p>Lo que viene va a estar bien. No por suerte ni porque sí, sino porque ella es como es y acaba haciendo que todo tenga sentido. Aunque no siempre lo vea.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECCIÓN 4 · MOMENTOS
+    ═══════════════════════════════════════ -->
+    <section class="momentos" id="momentos">
+        <div class="section-inner">
+            <span class="section-label">03</span>
+            <h2 class="section-title">Momentos</h2>
+            <div class="section-divider"></div>
+            <p class="momentos__intro">Algunos quedan grabados sin que uno se lo proponga.</p>
+
+            <div class="momentos__grid">
+
+                <div class="momento">
+                    <div class="momento__img-wrap">
+                        <img src="/images/momento1.jpg" alt="Momento 1">
+                    </div>
+                    <div class="momento__text">
+                        <h3 class="momento__title">Cuando se ríe de verdad</h3>
+                        <p>Hay una risa que aparece cuando algo le parece genuinamente gracioso. No la de compromiso, sino la buena. Esa es la que se queda.</p>
+                    </div>
+                </div>
+
+                <div class="momento">
+                    <div class="momento__img-wrap">
+                        <img src="/images/momento2.jpg" alt="Momento 2">
+                    </div>
+                    <div class="momento__text">
+                        <h3 class="momento__title">Cuando está concentrada</h3>
+                        <p>Ese silencio que hace cuando algo le importa de verdad. La forma en que se mete de lleno en lo que sea que está haciendo sin que el mundo alrededor cuente demasiado.</p>
+                    </div>
+                </div>
+
+                <div class="momento">
+                    <div class="momento__img-wrap">
+                        <img src="/images/momento3.jpg" alt="Momento 3">
+                    </div>
+                    <div class="momento__text">
+                        <h3 class="momento__title">Cuando cuida</h3>
+                        <p>Tiene una manera particular de estar presente para la gente que quiere. Sin aspavientos, sin necesitar que nadie se lo reconozca. Simplemente lo hace.</p>
+                    </div>
+                </div>
+
+                <div class="momento">
+                    <div class="momento__img-wrap">
+                        <img src="/images/momento4.jpg" alt="Momento 4">
+                    </div>
+                    <div class="momento__text">
+                        <h3 class="momento__title">Cuando descansa</h3>
+                        <p>Los momentos tranquilos también son importantes. Cuando baja la guardia y simplemente está, sin tener que ser nada en particular para nadie.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECCIÓN 5 · GALERÍA
+    ═══════════════════════════════════════ -->
+    <section class="galeria" id="galeria">
+        <div class="section-inner">
+            <span class="section-label">04</span>
+            <h2 class="section-title">Galería</h2>
+            <div class="section-divider"></div>
+            <p class="galeria__intro">Cien momentos. Todos suyos.</p>
+
+            <div class="galeria__grid">
+                <div class="galeria__item"><img src="/images/gallery/g001.jpg" alt="Foto 1" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g002.jpg" alt="Foto 2" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g003.jpg" alt="Foto 3" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g004.jpg" alt="Foto 4" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g005.jpg" alt="Foto 5" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g006.jpg" alt="Foto 6" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g007.jpg" alt="Foto 7" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g008.jpg" alt="Foto 8" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g009.jpg" alt="Foto 9" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g010.jpg" alt="Foto 10" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g011.jpg" alt="Foto 11" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g012.jpg" alt="Foto 12" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g013.jpg" alt="Foto 13" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g014.jpg" alt="Foto 14" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g015.jpg" alt="Foto 15" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g016.jpg" alt="Foto 16" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g017.jpg" alt="Foto 17" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g018.jpg" alt="Foto 18" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g019.jpg" alt="Foto 19" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g020.jpg" alt="Foto 20" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g021.jpg" alt="Foto 21" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g022.jpg" alt="Foto 22" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g023.jpg" alt="Foto 23" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g024.jpg" alt="Foto 24" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g025.jpg" alt="Foto 25" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g026.jpg" alt="Foto 26" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g027.jpg" alt="Foto 27" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g028.jpg" alt="Foto 28" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g029.jpg" alt="Foto 29" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g030.jpg" alt="Foto 30" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g031.jpg" alt="Foto 31" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g032.jpg" alt="Foto 32" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g033.jpg" alt="Foto 33" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g034.jpg" alt="Foto 34" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g035.jpg" alt="Foto 35" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g036.jpg" alt="Foto 36" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g037.jpg" alt="Foto 37" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g038.jpg" alt="Foto 38" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g039.jpg" alt="Foto 39" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g040.jpg" alt="Foto 40" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g041.jpg" alt="Foto 41" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g042.jpg" alt="Foto 42" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g043.jpg" alt="Foto 43" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g044.jpg" alt="Foto 44" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g045.jpg" alt="Foto 45" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g046.jpg" alt="Foto 46" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g047.jpg" alt="Foto 47" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g048.jpg" alt="Foto 48" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g049.jpg" alt="Foto 49" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g050.jpg" alt="Foto 50" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g051.jpg" alt="Foto 51" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g052.jpg" alt="Foto 52" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g053.jpg" alt="Foto 53" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g054.jpg" alt="Foto 54" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g055.jpg" alt="Foto 55" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g056.jpg" alt="Foto 56" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g057.jpg" alt="Foto 57" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g058.jpg" alt="Foto 58" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g059.jpg" alt="Foto 59" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g060.jpg" alt="Foto 60" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g061.jpg" alt="Foto 61" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g062.jpg" alt="Foto 62" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g063.jpg" alt="Foto 63" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g064.jpg" alt="Foto 64" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g065.jpg" alt="Foto 65" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g066.jpg" alt="Foto 66" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g067.jpg" alt="Foto 67" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g068.jpg" alt="Foto 68" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g069.jpg" alt="Foto 69" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g070.jpg" alt="Foto 70" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g071.jpg" alt="Foto 71" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g072.jpg" alt="Foto 72" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g073.jpg" alt="Foto 73" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g074.jpg" alt="Foto 74" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g075.jpg" alt="Foto 75" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g076.jpg" alt="Foto 76" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g077.jpg" alt="Foto 77" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g078.jpg" alt="Foto 78" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g079.jpg" alt="Foto 79" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g080.jpg" alt="Foto 80" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g081.jpg" alt="Foto 81" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g082.jpg" alt="Foto 82" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g083.jpg" alt="Foto 83" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g084.jpg" alt="Foto 84" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g085.jpg" alt="Foto 85" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g086.jpg" alt="Foto 86" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g087.jpg" alt="Foto 87" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g088.jpg" alt="Foto 88" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g089.jpg" alt="Foto 89" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g090.jpg" alt="Foto 90" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g091.jpg" alt="Foto 91" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g092.jpg" alt="Foto 92" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g093.jpg" alt="Foto 93" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g094.jpg" alt="Foto 94" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g095.jpg" alt="Foto 95" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g096.jpg" alt="Foto 96" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g097.jpg" alt="Foto 97" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g098.jpg" alt="Foto 98" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g099.jpg" alt="Foto 99" loading="lazy"></div>
+                <div class="galeria__item"><img src="/images/gallery/g100.jpg" alt="Foto 100" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECCIÓN 6 · CARTA FINAL
+    ═══════════════════════════════════════ -->
+    <section class="carta" id="carta">
+        <div class="section-inner carta__inner">
+            <span class="section-label">05</span>
+            <h2 class="section-title">Una carta</h2>
+            <div class="section-divider"></div>
+
+            <div class="carta__body">
+                <p class="carta__saludo">Para Yuli,</p>
+
+                <p>Hoy es el cumpleaños de alguien muy especial. De mi mejor amiga. De la persona que, pase el tiempo que pase, siempre está ahí. De la que sabe más de mí que nadie y, aun así, sigue aguantándome. Y eso ya tiene mérito.</p>
+
+                <p>Hoy es tu día. Y por todo lo que eres, y por todo lo que haces sin darte cuenta, felicidades.</p>
+
+                <p>Ya no es el primer año, ni el segundo, ni algo nuevo. Y creo que eso lo hace incluso mejor. Porque todo lo que hemos vivido ya no es una casualidad, es algo que hemos ido construyendo poco a poco, con todo lo bueno y con todo lo que no lo ha sido tanto.</p>
+
+                <p>Te he visto crecer, cambiar, aprender, equivocarte, acertar… y seguir adelante siempre. Y cada año que pasa tengo más claro algo: eres de las personas más fuertes que conozco. Y no por hacer ruido, sino por cómo eres por dentro.</p>
+
+                <p>Sé que lo nuestro no siempre es fácil. Nunca lo ha sido del todo. Pero también sé que lo que tenemos es real. Y eso vale más que cualquier cosa perfecta. Yo sigo aquí, con ganas de hacerlo bien, de entenderte mejor, de aprender contigo y de seguir construyendo algo que tenga sentido.</p>
+
+                <p>Porque contigo todo es eso: de verdad. Sin filtros, sin tonterías. Aunque luego vayas de que te da igual todo… caraculo.</p>
+
+                <p>No sé qué pasará en el futuro, pero sí sé que cuando mire atrás dentro de muchos años, voy a estar orgulloso de haber vivido esto contigo. Porque no es cualquier historia, y tú no eres cualquier persona.</p>
+
+                <p>Un año más, otro 19 de abril. Y ojalá sigan viniendo muchos más.</p>
+
+                <p>Feliz cumpleaños, caraculo.</p>
+
+                <p>Te quiero mucho. Mucho más de lo que suelo decir.</p>
+
+                <p class="carta__firma">Tu novio,<br><em>Luis</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="footer">
+        <p class="footer__text">De Luis · Para Yuli caraculo</p>
+    </footer>
+
+    <!-- Lightbox overlay -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">&#x2715;</button>
+        <button class="lightbox__prev" id="lightboxPrev" aria-label="Anterior">&#8249;</button>
+        <div class="lightbox__img-wrap">
+            <img class="lightbox__img" id="lightboxImg" src="" alt="">
+        </div>
+        <button class="lightbox__next" id="lightboxNext" aria-label="Siguiente">&#8250;</button>
+    </div>
+
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
