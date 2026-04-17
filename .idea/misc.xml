@@ -4,7 +4,9 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/yuli-web/pom.xml" />
+        <option value="$PROJECT_DIR$/PFG/pom.xml" />
+        <option value="$PROJECT_DIR$/FRONT/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>

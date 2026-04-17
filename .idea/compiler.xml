@@ -9,9 +9,15 @@
         <module name="yuli-web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="PFG" target="17" />
+      <module name="spring-skeleton" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="PFG" options="-parameters" />
+      <module name="spring-skeleton" options="-parameters" />
       <module name="yuli-web" options="-parameters" />
     </option>
   </component>
