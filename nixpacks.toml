@@ -1,0 +1,5 @@
+[phases.build]
+cmds = ["mvn -DskipTests clean package"]
+
+[start]
+cmd = "java -jar target/yuli-web-1.0.0.jar"
