@@ -1,5 +1,3 @@
-echo '[build]
-builder = "dockerfile"' > railway.toml
-git add railway.toml
-git commit -m "force dockerfile builder"
-git push
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
